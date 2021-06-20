@@ -1,0 +1,39 @@
+h1 {
+    color: green;
+}
+
+body {
+    background: #59A4F2;
+}
+
+aside {
+    float: left;
+    background: #81b00a;
+    width: 20%;
+    padding: 2.5%;
+    height: 100vh;
+    color: #F1564A;
+    border-right: 5px solid #fff;
+}
+
+aside .logo {
+    top: -30px;
+}
+
+aside h3 {
+    font-size: 25px;
+}
+
+aside ul {list-style: none}
+
+aside ul li {
+    color: #F1564A;
+    display: block;
+    margin-top: 20px;
+    transition: all .6s ease;
+}
+
+aside ul li:hover, aside ul a:hover {
+    color: #6a3f3c;
+    transform: scale(1.55);
+}
