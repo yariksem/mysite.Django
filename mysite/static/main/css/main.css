@@ -3,28 +3,24 @@ h1 {
 }
 
 body {
-    background: #59A4F2;
+    background: #3f4441;
 }
 
-aside {
+aside.panel {
     float: left;
-    background: #81b00a;
-    width: 20%;
-    padding: 2.5%;
+    background: #ffdecf;
+    width: 19%;
+    padding: 2.7%;
     height: 100vh;
     color: #F1564A;
-    border-right: 5px solid #fff;
 }
 
-aside .logo {
+aside.logo {
     top: -30px;
 }
 
-aside .footer {
-    top: -30px;
-}
 
-aside h3 {
+aside.h3 {
     font-size: 25px;
 }
 
@@ -40,5 +36,27 @@ aside ul li {
 aside ul li:hover, aside ul a:hover {
     color: #6a3f3c;
     transform: scale(1.55);
+}
+
+div {
+    grid-template-rows: auto 1fr auto;
+    text-align: center;
+}
+
+div main {
+    color: red;
+    background: #5e6f64;
+    width:50%;
+}
+
+div footer {
+    color: blue;
+    width: 20%;
+
+}
+
+div header {
+    background: #ba7967;
+    width: 10%;
 }
 

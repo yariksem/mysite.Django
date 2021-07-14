@@ -5,16 +5,13 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="stylesheet" href="{% static '/main/css/main.css' %}">
     <title>
-        {% block title %}
-            Standart_Page
-        {% endblock %}
+        {% block title %}Standart_Page{% endblock %}
     </title>
 </head>
 <body>
-    {{ user.username }} : {{ user.email }} : {{ user.is_active }}
-    <aside>
+    <aside class="panel">
         <img src="{% static 'main/img/img.png'%}" alt="Logo">
         <span class="logo">Yaroslav_Semenov</span>
         <h3>Navigation</h3>
@@ -22,19 +19,20 @@
             <a href="http://127.0.0.1:8000/"><li><i class="fas fa-home"></i> Home</li></a>
             <a href="http://127.0.0.1:8000/about/"><li><i class="far fa-address-book"></i> About</li></a>
             <a href="http://127.0.0.1:8000/contacts"><li><i class="far fa-paper-plane"></i> Contacts</li></a>
+            <a href="http://127.0.0.1:8000/reg"><li><i class="far fa-paper-plane"></i> Register</li></a>
         </ul>
-        {% block ms %}
-            Empty information.
-        {% endblock %}
     </aside>
-    <main>
-        {% block content %}
-        {% endblock %}
-    </main>
-    <div class="footer">
-        {% block footer %}
-            Footer is empty!
-        {% endblock %}
+    <div>
+        <header>
+            <h3>Hello!</h3>
+        </header>
+        <main>
+            <h3>Hello!</h3>
+        </main>
+        <footer>
+            <h3>Hello!</h3>
+        </footer>
     </div>
+
 </body>
 </html>

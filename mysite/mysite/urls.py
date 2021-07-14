@@ -19,6 +19,7 @@ from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
 import home.views
+import register.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +27,5 @@ urlpatterns = [
     path('about/', home.views.about),
     path('contacts', home.views.contacts),
     path('items/', home.views.items),
+    path('reg/', register.views.reg),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
